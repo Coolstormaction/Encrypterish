@@ -10,7 +10,7 @@ def returnMain(word):
         encryption = Encryption(eWord)
         encryption.shuffle()
         
-    if word == "D" or word == 'd': 
+    if word == "D" or word == 'd':
         dWord = input("\nEnter the word you want to decrypt -> ")
         decrypt = Decryption(dWord)
         decrypt.decrypt()

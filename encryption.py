@@ -27,9 +27,16 @@ class Encryption:
         """
         Shuffles the input string and returns a new encrypted string output.\n
         Taking one letter from the word, it replaces the letter to the third letter respective to the current letter.
-        """ 
+        """
         strings.originalString(self.word)
-        for l in self.word: 
-            if l != any(['x', 'y', 'z', 'X', 'Y', "Z"]): # Checking for letters that can not be replaced to the third letter
+        for l in self.word:
+            if l not in strings.notToTheThird and not l.isnumeric() and not l in strings.assigned.values(): # Checking for letters that can not be replaced to the third letter
                 self.newWordList.append(ascii_lowercase[ascii_lowercase.index(l) + 3]) if not l.isupper() else self.newWordList.append(ascii_uppercase[ascii_uppercase.index(l) + 3])
+            
+            if l in strings.notToTheThird: # Checking for x y z letters that can not be replaced to the third letter
+                self.newWordList.append(strings.notThird[l])
+                
+            if l.isnumeric(): self.newWordList.append(strings.assigned[l])
+            if l in strings.assigned.values(): self.newWordList.append(strings.reversedAssigned[l])
+            
         print(''.join(self.newWordList))
