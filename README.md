@@ -1,10 +1,3 @@
- _____                             _            _     _
-| ____|_ __   ___ _ __ _   _ _ __ | |_ ___ _ __(_)___| |__
-|  _| | '_ \ / __| '__| | | | '_ \| __/ _ \ '__| / __| '_ \
-| |___| | | | (__| |  | |_| | |_) | ||  __/ |  | \__ \ | | |
-|_____|_| |_|\___|_|   \__, | .__/ \__\___|_|  |_|___/_| |_|
-                       |___/|_|
-
 # Encryption and Decryption program made in python
 
 This is a encryptor and decryptor program made in python.
