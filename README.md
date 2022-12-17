@@ -12,11 +12,3 @@ The encryption class takes a letter from the given string, then replaces it to t
 Not a stable release and not for serious use, working on some bugs and making it more user-friendly to use. \
 I will release a v0.0.1 which will the first stable version of Encrypterish. This code is for experimenting purposes and raw. \
 More detailed README and pip package coming soon. 
-
-
-Not a stable release and not for serious use, working on some bugs and making it more user-friendly to use. \
-I will release a v0.0.1 which will the first stable version of Encrypterish. This code is for experimenting purposes and raw. \
-More detailed README and pip package coming soon. 
-
-Not a stable release and not for serious use, working on some bugs and making it more user-friendly to use.
-I will release a v0.0.1 which will the first stable version of Encrypterish. This code is for experimenting purposes and raw.
