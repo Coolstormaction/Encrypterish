@@ -1,5 +1,6 @@
 __author__ = "Debarka Naskar"
 __license__ = "MIT"
+__copyright__ = "Copyright (c) 2022 Debarka"
 __version__ = "0.0.1"
 __maintainer__ = "Debarka Naskar"
 __email__ = "halderhena05@gmail.com"
