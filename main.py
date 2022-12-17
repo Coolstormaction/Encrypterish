@@ -3,10 +3,12 @@ from decryption import Decryption
 from rich.console import Console
 from strings import mainStr
 from errors import *
-import functions, os
+import functions, os, pyfiglet
 
 console = Console()
+os.system("cls" if os.name == 'nt' else 'clear')
 while True:
+    print(pyfiglet.figlet_format('Encrypterish'))
     console.print(mainStr)
     word = input('')
     functions.returnMain(word)

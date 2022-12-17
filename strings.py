@@ -28,7 +28,7 @@ notThird  = {
 canNotDecreaseDict = {value: key for key, value in notThird.items()}
 reversedAssigned = {value: key for key, value in assigned.items()}
 
-mainStr = "[green1]~[/]\n[bright_cyan]$[/] [green1]encrypt[/] [bright_cyan]||[/] [green1]decrypt[/] [bright_cyan]--run[/]\n[green1].\n..\n...[/]\n[bright_cyan]->[/] [green1]Do you want to encrypt [E] or decrypt [D] ?[/] [bright_cyan]<-[/]\n "
+mainStr = "[green1]~[/]\n[bright_cyan]$[/] [green1]encrypt[/] [bright_cyan]||[/] [green1]decrypt[/] [bright_cyan]--run[/]\n\n[green1].\n..\n...[/]\n\n[bright_cyan]->[/] [green1]Do you want to encrypt [E] or decrypt [D] ?[/] [bright_cyan]<-[/]\n "
 validEncryptList = ['E', 'e']
 validDecryptList = ['D', 'd']
 notToTheThird = ['x', 'y', 'z', 'X', 'Y', 'Z']
