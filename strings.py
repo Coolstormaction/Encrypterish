@@ -33,6 +33,6 @@ validEncryptList = ['E', 'e']
 validDecryptList = ['D', 'd']
 notToTheThird = ['x', 'y', 'z', 'X', 'Y', 'Z']
 canNotDecrease = ['a', 'b', 'c', 'A', 'B', 'C']
-
+# bye noobra
 def originalString(word): 
     with open("reserved.txt", "w") as f: f.write(word)
