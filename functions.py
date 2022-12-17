@@ -15,6 +15,7 @@ def returnMain(word):
         print(pyfiglet.figlet_format('Encrypting...', width=500))
         time.sleep(2)
         encryption.shuffle()
+        time.sleep(2)
         
     if word == "D" or word == 'd':
         console.print('\n[green1]Enter the word you want to decrypt[/] [bright_cyan]-> [/]')
@@ -23,3 +24,4 @@ def returnMain(word):
         print(pyfiglet.figlet_format('Decrypting...', width=500))
         time.sleep(2)
         decrypt.decrypt()
+        time.sleep(2)

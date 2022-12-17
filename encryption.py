@@ -35,8 +35,11 @@ class Encryption:
             
             if l in strings.notToTheThird: # Checking for x y z letters that can not be replaced to the third letter
                 self.newWordList.append(strings.notThird[l])
-                
+            
+            # Checking for numeric characters     
             if l.isnumeric(): self.newWordList.append(strings.assigned[l])
+            
+            # Checking for punctuation | whitespace characters 
             if l in strings.assigned.values(): self.newWordList.append(strings.reversedAssigned[l])
             
         print(''.join(self.newWordList))
