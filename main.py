@@ -6,7 +6,7 @@ __maintainer__ = "Debarka Naskar"
 __email__ = "halderhena05@gmail.com"
 __status__ = "Development"
 
-from encryption import Encryption
+from encryption import Encryption;
 from decryption import Decryption
 from rich.console import Console
 from strings import mainStr
