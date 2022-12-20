@@ -38,8 +38,13 @@ class Decryption:
         with open('reserved.txt', 'r') as f:
             # try-except clause to not break out of the loop
             
-            try: 
-                if self.word in f.read(): raise NotShuffledError("String not shuffled, please provide a valid string which is shuffled from ./encryption.py.")
+            try:
+                # Custom errors \(￣︶￣*\))
+                 
+                if self.word in f.read(): raise NotShuffledError("String not shuffled, please provide a valid string which is shuffled from ./encryption.py. The below decrypted string is not valid.\n")
+            
+            # Printing the error to not break out of the loop 
+            
             except NotShuffledError as notShuffled: print(notShuffled)
         
         print(''.join(self.newWordList))
