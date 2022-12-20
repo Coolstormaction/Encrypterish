@@ -6,7 +6,7 @@ __copyright__ = "Copyright (c) 2022 Debarka"
 __version__ = "0.0.1"
 __maintainer__ = "Debarka Naskar"
 __email__ = "halderhena05@gmail.com"
-__status__ = "Development"
+__status__ = "Production"
 
 # Imports 
 
