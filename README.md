@@ -83,6 +83,6 @@ If you notice bugs or want to share feedback, contact me through any of the belo
 - Email - halderhena05@gmail.com
 
 Any questions and feedback are heartily welcome 😄. \
-More improvements and pip package coming very soon (probably today lol).
+More improvements on the shuffling process and pip package for encrypterish are going to be rolled on in the next few updates!
 
 #
