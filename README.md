@@ -56,7 +56,7 @@ And punctuations are replaced with their corresponding number in the keyboard
 
 If you notice bugs or want to share feedback, contact me through any of the below mediums\
 
-- Discord - Ignis#3040 \
+- Discord - Ignis#3040 
 - Email - halderhena05@gmail.com
 
 Any questions and feedback are heartily welcome 😄. \
