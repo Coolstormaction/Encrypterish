@@ -54,6 +54,11 @@ And punctuations are replaced with their corresponding number in the keyboard
 
 # Example of how to use in your codebase
 
+- Clone the repository (```git clone https://github.com/Coolstormaction/Encrypterish```)
+- Rename the new folder from `Encrypterish` to `encrypterish`
+- Move the folder to your codebase (as pip package is not available yet)
+- Follow the below steps
+
 ```python
 from encrypterish import Encryption, Decryption
 
