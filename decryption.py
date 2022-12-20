@@ -1,17 +1,30 @@
+# Imports 
+
 from rich.console import Console
 from string import ascii_lowercase, ascii_uppercase
 from errors import *
 import time, getpass, strings
 
+# Setup environment
 user = getpass.getuser()
 console = Console()
 
+# Base :class:`Decryption`
 class Decryption: 
+    """Generates decrypted string form a given encrypted string input which is encrypted from :file:`./encryption.py`"""
+    
     def __init__(self, word):
         self.word = word
         self.newWordList = []
         
     def decrypt(self): 
+        """
+        Decrypts the input string and returns the original string.
+        The process is the exact opposite of :class:`Encryption`.
+
+        Raises:
+            NotShuffledError: Raised when string is not shuffled.
+        """
         for l in self.word: 
             if l not in strings.canNotDecrease and l not in strings.assigned.values() and l not in strings.reversedAssigned.values(): 
                 self.newWordList.append(ascii_lowercase[ascii_lowercase.index(l) - 3]) if not l.isupper() else self.newWordList.append(ascii_uppercase[ascii_uppercase.index(l) - 3])

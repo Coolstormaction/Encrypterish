@@ -16,8 +16,10 @@ import time, getpass, strings
 user = getpass.getuser()
 console = Console()
 
+# Base :class:`Encryption`
 class Encryption:
     """Generates encrypted string from a given string input."""
+    
     def __init__(self, word):
         """Constructor"""
         self.word = word
@@ -41,5 +43,6 @@ class Encryption:
             
             # Checking for punctuation | whitespace characters 
             if l in strings.assigned.values(): self.newWordList.append(strings.reversedAssigned[l])
-            
+        
+        # Printing a clean list to the console.    
         print(''.join(self.newWordList))

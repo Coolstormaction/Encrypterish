@@ -32,7 +32,10 @@ assigned = {
 notThird  = {
     'x': 'c', # c : x
     'y': 'b', # b : y
-    'z': 'a' # a : z
+    'z': 'a', # a : z
+    'X': 'C', # C : X
+    'Y': 'B', # B : Y
+    'Z': 'A', # A : Z
 }
 
 # Reversed dictionaries
