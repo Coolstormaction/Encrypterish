@@ -52,6 +52,24 @@ And punctuations are replaced with their corresponding number in the keyboard
 2 is replaced with @\
 ..so as we can clearly see, this class is the exact opposite of the Encrypt class.
 
+# Example of how to use in your codebase
+
+```python
+from encrypterish import Encryption, Decryption
+
+# Encrypting a string
+encrypt = Encryption("example")
+encrypted_string = encrypt.shuffle()
+
+# Decrypting a string 
+decrypt = Decryption(encrypted_string)
+decrypted_string = decrypt.decrypt()
+
+print(encrypted_string, decrypted_string)
+
+# More code ...
+```
+
 # That's it!
 
 If you notice bugs or want to share feedback, contact me through any of the below mediums
