@@ -33,8 +33,14 @@ class Decryption:
             if l in strings.assigned.values(): self.newWordList.append(strings.reversedAssigned[str(l)])
             if l in strings.reversedAssigned.values(): self.newWordList(strings.assigned(str(l)))
             
+        # Checking for non shuffled words but provided to decrypt
+        
         with open('reserved.txt', 'r') as f:
-           if self.word in f.read(): raise NotShuffledError("String not shuffled, please provide a valid string which is shuffled from ./encryption.py.")
+            # try-except clause to not break out of the loop
             
+            try: 
+                if self.word in f.read(): raise NotShuffledError("String not shuffled, please provide a valid string which is shuffled from ./encryption.py.")
+            except NotShuffledError as notShuffled: print(notShuffled)
+        
         print(''.join(self.newWordList))
         self.newWordList.clear()
