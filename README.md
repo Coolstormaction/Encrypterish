@@ -1,13 +1,65 @@
-# Encryption and Decryption program made in python
+# Encrypterish
 
-This is a encryptor and decryptor program made in python.
+Encrypterish is encrypting (and decrypting) program which encrypts a given string input and provides an encrypted output. It also supports decrypting a given encrypted string input (it has to encrypted from Encrypterish btw).
 
-# Shuffling process
+## How does Encrypterish actually encrypt (or shuffle) a given string input?
 
-The encryption class takes a letter from the given string, then replaces it to the 3rd letter respectively to the current letter.
+In the codebase, we have two base classes, 
+- Encryption
+- Decryption
 
-# Warning ⚠
+### Let's talk about :class:`Encryption` first
 
+The Encrypt class takes a string input (original string) and then shuffles and gives the output. 
 
-Not a stable release and not for serious use, working on some bugs and making it more user-friendly to use. \
-I will release a v0.0.1 which will the first stable version of Encrypterish. This code is for experimenting purposes and raw. 
+Behind the scenes, the shuffle method which actually shuffles it iterates over the word. \
+While iterating it replaces each letter to the 3rd letter respective to it. 
+
+### What about numbers?
+
+As for numbers, the shuffle functions replaces them with their assigned symbol in keyboard. If you look at the keyboard, you will find that every number has a assigned punctuation symbol which can be accessed using the `Shift`  key. The process for shuffling punctuations is just the opposite, it replaces the symbol with it's assigned number on the keyboard.
+
+### What about letters like `xyz` which cannot be replaced to the third letter? 
+
+As for these letters, the shuffle method replaces them with `abc` respectively.
+
+- Example \
+x is replaced with a\
+y is replaced with b \
+z is replaced with c
+
+### Let's talk about :class:`Decryption` now
+
+This class is the exact opposite of the Encrypt class. After being shuffled from the Encrypt class, this class decrypts the string to it's original state. 
+
+The hardwork in this class is all done by the decrypt method. \
+This method iterates over the word and replaces the letter to the letter 3 places before it.
+
+- Example \
+d is replaced with a\
+e is replaced with b\
+...and so on
+
+### What for numbers?
+
+As for numbers, they are replaced with their corresponding symbol in the keyboard. \
+And punctuations are replaced with their corresponding number in the keyboard
+
+- Example\
+! is replaced 1\
+@ is replaced with 2 \
+1 is replaced with !\
+2 is replaced with @\
+..so as we can clearly see, this class is the exact opposite of the Encrypt class.
+
+# That's it!
+
+If you notice bugs or want to share feedback, contact me through any of the below mediums\
+
+Discord - Ignis#3040 \
+Email - halderhena05@gmail.com
+
+Any questions and feedback are heartily welcome 😄. \
+More improvements and pip package coming very soon (probably today lol).
+
+#
