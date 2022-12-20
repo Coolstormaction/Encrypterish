@@ -3,7 +3,7 @@
 from rich.console import Console
 from string import ascii_lowercase, ascii_uppercase
 from errors import *
-import time, getpass, strings
+import time, getpass, strings, os
 
 # Setup environment
 user = getpass.getuser()
@@ -32,6 +32,11 @@ class Decryption:
             if l in strings.canNotDecrease: self.newWordList.append(strings.canNotDecreaseDict[str(l)])
             if l in strings.assigned.values(): self.newWordList.append(strings.reversedAssigned[str(l)])
             if l in strings.reversedAssigned.values(): self.newWordList(strings.assigned(str(l)))
+            
+        # Checking if reserved.txt exists
+        
+        if not os.path.exists('reserved.txt'): 
+            with open('reserved.txt', 'w') as f: f.write('')
             
         # Checking for non shuffled words but provided to decrypt
         
