@@ -84,5 +84,4 @@ If you notice bugs or want to share feedback, contact me through any of the belo
 
 Any questions and feedback are heartily welcome 😄. \
 More improvements on the shuffling process and pip package for encrypterish are going to be rolled on in the next few updates!
-I will switch to cipher soon, and working on the switch right now.
 #
