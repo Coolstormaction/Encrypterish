@@ -60,7 +60,8 @@ And punctuations are replaced with their corresponding number in the keyboard
 - Follow the below steps
 
 ```python
-from encrypterish import Encryption, Decryption
+from encrypterish.encryption import Encryption
+from encrypterish.decryption import Decryption
 
 # Encrypting a string
 encrypt = Encryption("example")
